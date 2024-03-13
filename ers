@@ -1,0 +1,451 @@
+[1mdiff --git a/.eslintrc.cjs b/.eslintrc.cjs[m
+[1mdeleted file mode 100644[m
+[1mindex 3e212e1..0000000[m
+[1m--- a/.eslintrc.cjs[m
+[1m+++ /dev/null[m
+[36m@@ -1,21 +0,0 @@[m
+[31m-module.exports = {[m
+[31m-  root: true,[m
+[31m-  env: { browser: true, es2020: true },[m
+[31m-  extends: [[m
+[31m-    'eslint:recommended',[m
+[31m-    'plugin:react/recommended',[m
+[31m-    'plugin:react/jsx-runtime',[m
+[31m-    'plugin:react-hooks/recommended',[m
+[31m-  ],[m
+[31m-  ignorePatterns: ['dist', '.eslintrc.cjs'],[m
+[31m-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },[m
+[31m-  settings: { react: { version: '18.2' } },[m
+[31m-  plugins: ['react-refresh'],[m
+[31m-  rules: {[m
+[31m-    'react/jsx-no-target-blank': 'off',[m
+[31m-    'react-refresh/only-export-components': [[m
+[31m-      'warn',[m
+[31m-      { allowConstantExport: true },[m
+[31m-    ],[m
+[31m-  },[m
+[31m-}[m
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mdeleted file mode 100644[m
+[1mindex a547bf3..0000000[m
+[1m--- a/.gitignore[m
+[1m+++ /dev/null[m
+[36m@@ -1,24 +0,0 @@[m
+[31m-# Logs[m
+[31m-logs[m
+[31m-*.log[m
+[31m-npm-debug.log*[m
+[31m-yarn-debug.log*[m
+[31m-yarn-error.log*[m
+[31m-pnpm-debug.log*[m
+[31m-lerna-debug.log*[m
+[31m-[m
+[31m-node_modules[m
+[31m-dist[m
+[31m-dist-ssr[m
+[31m-*.local[m
+[31m-[m
+[31m-# Editor directories and files[m
+[31m-.vscode/*[m
+[31m-!.vscode/extensions.json[m
+[31m-.idea[m
+[31m-.DS_Store[m
+[31m-*.suo[m
+[31m-*.ntvs*[m
+[31m-*.njsproj[m
+[31m-*.sln[m
+[31m-*.sw?[m
+[1mdiff --git a/README.md b/README.md[m
+[1mindex f768e33..0e7ae54 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -1,8 +1,2 @@[m
+[31m-# React + Vite[m
+[31m-[m
+[31m-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.[m
+[31m-[m
+[31m-Currently, two official plugins are available:[m
+[31m-[m
+[31m-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh[m
+[31m-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh[m
+[32m+[m[32m# Autobuddys[m
+[32m+[m[32m In my role as a frontend developer at Autobuddys startup, I managed the full redesign of the company's website. Throughout this project, I became proficient in ReactJS and perfected methods for guaranteeing website responsiveness.[m
+[1mdiff --git a/index.html b/index.html[m
+[1mdeleted file mode 100644[m
+[1mindex 579bd5c..0000000[m
+[1m--- a/index.html[m
+[1m+++ /dev/null[m
+[36m@@ -1,18 +0,0 @@[m
+[31m-<!doctype html>[m
+[31m-<html lang="en">[m
+[31m-  <head>[m
+[31m-    <meta charset="UTF-8" />[m
+[31m-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />[m
+[31m-    <link rel="preconnect" href="https://fonts.googleapis.com">[m
+[31m-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>[m
+[31m-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">[m
+[31m-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">[m
+[31m-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />[m
+[31m-    <title>Vite + React</title>[m
+[31m-  </head>[m
+[31m-  <body>[m
+[31m-    <div id="root"></div>[m
+[31m-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>[m
+[31m-    <script type="module" src="/src/main.jsx"></script>[m
+[31m-  </body>[m
+[31m-</html>[m
+[1mdiff --git a/package-lock.json b/package-lock.json[m
+[1mdeleted file mode 100644[m
+[1mindex 98185e0..0000000[m
+[1m--- a/package-lock.json[m
+[1m+++ /dev/null[m
+[36m@@ -1,4155 +0,0 @@[m
+[31m-{[m
+[31m-  "name": "autobuddy",[m
+[31m-  "version": "0.0.0",[m
+[31m-  "lockfileVersion": 3,[m
+[31m-  "requires": true,[m
+[31m-  "packages": {[m
+[31m-    "": {[m
+[31m-      "name": "autobuddy",[m
+[31m-      "version": "0.0.0",[m
+[31m-      "dependencies": {[m
+[31m-        "react": "^18.2.0",[m
+[31m-        "react-dom": "^18.2.0",[m
+[31m-        "react-router-dom": "^6.22.2"[m
+[31m-      },[m
+[31m-      "devDependencies": {[m
+[31m-        "@types/react": "^18.2.56",[m
+[31m-        "@types/react-dom": "^18.2.19",[m
+[31m-        "@vitejs/plugin-react": "^4.2.1",[m
+[31m-        "eslint": "^8.56.0",[m
+[31m-        "eslint-plugin-react": "^7.33.2",[m
+[31m-        "eslint-plugin-react-hooks": "^4.6.0",[m
+[31m-        "eslint-plugin-react-refresh": "^0.4.5",[m
+[31m-        "vite": "^5.1.4"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@aashutoshrathi/word-wrap": {[m
+[31m-      "version": "1.2.6",[m
+[31m-      "resolved": "https://registry.npmjs.org/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz",[m
+[31m-      "integrity": "sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==",[m
+[31m-      "dev": true,[m
+[31m-      "engines": {[m
+[31m-        "node": ">=0.10.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@ampproject/remapping": {[m
+[31m-      "version": "2.3.0",[m
+[31m-      "resolved": "https://registry.npmjs.org/@ampproject/remapping/-/remapping-2.3.0.tgz",[m
+[31m-      "integrity": "sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@jridgewell/gen-mapping": "^0.3.5",[m
+[31m-        "@jridgewell/trace-mapping": "^0.3.24"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.0.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/code-frame": {[m
+[31m-      "version": "7.23.5",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.23.5.tgz",[m
+[31m-      "integrity": "sha512-CgH3s1a96LipHCmSUmYFPwY7MNx8C3avkq7i4Wl3cfa662ldtUe4VM1TPXX70pfmrlWTb6jLqTYrZyT2ZTJBgA==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/highlight": "^7.23.4",[m
+[31m-        "chalk": "^2.4.2"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/compat-data": {[m
+[31m-      "version": "7.23.5",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.23.5.tgz",[m
+[31m-      "integrity": "sha512-uU27kfDRlhfKl+w1U6vp16IuvSLtjAxdArVXPa9BvLkrr7CYIsxH5adpHObeAGY/41+syctUWOZ140a2Rvkgjw==",[m
+[31m-      "dev": true,[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/core": {[m
+[31m-      "version": "7.24.0",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/core/-/core-7.24.0.tgz",[m
+[31m-      "integrity": "sha512-fQfkg0Gjkza3nf0c7/w6Xf34BW4YvzNfACRLmmb7XRLa6XHdR+K9AlJlxneFfWYf6uhOzuzZVTjF/8KfndZANw==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@ampproject/remapping": "^2.2.0",[m
+[31m-        "@babel/code-frame": "^7.23.5",[m
+[31m-        "@babel/generator": "^7.23.6",[m
+[31m-        "@babel/helper-compilation-targets": "^7.23.6",[m
+[31m-        "@babel/helper-module-transforms": "^7.23.3",[m
+[31m-        "@babel/helpers": "^7.24.0",[m
+[31m-        "@babel/parser": "^7.24.0",[m
+[31m-        "@babel/template": "^7.24.0",[m
+[31m-        "@babel/traverse": "^7.24.0",[m
+[31m-        "@babel/types": "^7.24.0",[m
+[31m-        "convert-source-map": "^2.0.0",[m
+[31m-        "debug": "^4.1.0",[m
+[31m-        "gensync": "^1.0.0-beta.2",[m
+[31m-        "json5": "^2.2.3",[m
+[31m-        "semver": "^6.3.1"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      },[m
+[31m-      "funding": {[m
+[31m-        "type": "opencollective",[m
+[31m-        "url": "https://opencollective.com/babel"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/generator": {[m
+[31m-      "version": "7.23.6",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/generator/-/generator-7.23.6.tgz",[m
+[31m-      "integrity": "sha512-qrSfCYxYQB5owCmGLbl8XRpX1ytXlpueOb0N0UmQwA073KZxejgQTzAmJezxvpwQD9uGtK2shHdi55QT+MbjIw==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/types": "^7.23.6",[m
+[31m-        "@jridgewell/gen-mapping": "^0.3.2",[m
+[31m-        "@jridgewell/trace-mapping": "^0.3.17",[m
+[31m-        "jsesc": "^2.5.1"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/helper-compilation-targets": {[m
+[31m-      "version": "7.23.6",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/helper-compilation-targets/-/helper-compilation-targets-7.23.6.tgz",[m
+[31m-      "integrity": "sha512-9JB548GZoQVmzrFgp8o7KxdgkTGm6xs9DW0o/Pim72UDjzr5ObUQ6ZzYPqA+g9OTS2bBQoctLJrky0RDCAWRgQ==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/compat-data": "^7.23.5",[m
+[31m-        "@babel/helper-validator-option": "^7.23.5",[m
+[31m-        "browserslist": "^4.22.2",[m
+[31m-        "lru-cache": "^5.1.1",[m
+[31m-        "semver": "^6.3.1"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/helper-environment-visitor": {[m
+[31m-      "version": "7.22.20",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/helper-environment-visitor/-/helper-environment-visitor-7.22.20.tgz",[m
+[31m-      "integrity": "sha512-zfedSIzFhat/gFhWfHtgWvlec0nqB9YEIVrpuwjruLlXfUSnA8cJB0miHKwqDnQ7d32aKo2xt88/xZptwxbfhA==",[m
+[31m-      "dev": true,[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/helper-function-name": {[m
+[31m-      "version": "7.23.0",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/helper-function-name/-/helper-function-name-7.23.0.tgz",[m
+[31m-      "integrity": "sha512-OErEqsrxjZTJciZ4Oo+eoZqeW9UIiOcuYKRJA4ZAgV9myA+pOXhhmpfNCKjEH/auVfEYVFJ6y1Tc4r0eIApqiw==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/template": "^7.22.15",[m
+[31m-        "@babel/types": "^7.23.0"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/helper-hoist-variables": {[m
+[31m-      "version": "7.22.5",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/helper-hoist-variables/-/helper-hoist-variables-7.22.5.tgz",[m
+[31m-      "integrity": "sha512-wGjk9QZVzvknA6yKIUURb8zY3grXCcOZt+/7Wcy8O2uctxhplmUPkOdlgoNhmdVee2c92JXbf1xpMtVNbfoxRw==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/types": "^7.22.5"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/helper-module-imports": {[m
+[31m-      "version": "7.22.15",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.22.15.tgz",[m
+[31m-      "integrity": "sha512-0pYVBnDKZO2fnSPCrgM/6WMc7eS20Fbok+0r88fp+YtWVLZrp4CkafFGIp+W0VKw4a22sgebPT99y+FDNMdP4w==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/types": "^7.22.15"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/helper-module-transforms": {[m
+[31m-      "version": "7.23.3",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/helper-module-transforms/-/helper-module-transforms-7.23.3.tgz",[m
+[31m-      "integrity": "sha512-7bBs4ED9OmswdfDzpz4MpWgSrV7FXlc3zIagvLFjS5H+Mk7Snr21vQ6QwrsoCGMfNC4e4LQPdoULEt4ykz0SRQ==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/helper-environment-visitor": "^7.22.20",[m
+[31m-        "@babel/helper-module-imports": "^7.22.15",[m
+[31m-        "@babel/helper-simple-access": "^7.22.5",[m
+[31m-        "@babel/helper-split-export-declaration": "^7.22.6",[m
+[31m-        "@babel/helper-validator-identifier": "^7.22.20"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      },[m
+[31m-      "peerDependencies": {[m
+[31m-        "@babel/core": "^7.0.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/helper-plugin-utils": {[m
+[31m-      "version": "7.24.0",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/helper-plugin-utils/-/helper-plugin-utils-7.24.0.tgz",[m
+[31m-      "integrity": "sha512-9cUznXMG0+FxRuJfvL82QlTqIzhVW9sL0KjMPHhAOOvpQGL8QtdxnBKILjBqxlHyliz0yCa1G903ZXI/FuHy2w==",[m
+[31m-      "dev": true,[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/helper-simple-access": {[m
+[31m-      "version": "7.22.5",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/helper-simple-access/-/helper-simple-access-7.22.5.tgz",[m
+[31m-      "integrity": "sha512-n0H99E/K+Bika3++WNL17POvo4rKWZ7lZEp1Q+fStVbUi8nxPQEBOlTmCOxW/0JsS56SKKQ+ojAe2pHKJHN35w==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/types": "^7.22.5"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/helper-split-export-declaration": {[m
+[31m-      "version": "7.22.6",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.22.6.tgz",[m
+[31m-      "integrity": "sha512-AsUnxuLhRYsisFiaJwvp1QF+I3KjD5FOxut14q/GzovUe6orHLesW2C7d754kRm53h5gqrz6sFl6sxc4BVtE/g==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/types": "^7.22.5"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/helper-string-parser": {[m
+[31m-      "version": "7.23.4",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/helper-string-parser/-/helper-string-parser-7.23.4.tgz",[m
+[31m-      "integrity": "sha512-803gmbQdqwdf4olxrX4AJyFBV/RTr3rSmOj0rKwesmzlfhYNDEs+/iOcznzpNWlJlIlTJC2QfPFcHB6DlzdVLQ==",[m
+[31m-      "dev": true,[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/helper-validator-identifier": {[m
+[31m-      "version": "7.22.20",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.22.20.tgz",[m
+[31m-      "integrity": "sha512-Y4OZ+ytlatR8AI+8KZfKuL5urKp7qey08ha31L8b3BwewJAoJamTzyvxPR/5D+KkdJCGPq/+8TukHBlY10FX9A==",[m
+[31m-      "dev": true,[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/helper-validator-option": {[m
+[31m-      "version": "7.23.5",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/helper-validator-option/-/helper-validator-option-7.23.5.tgz",[m
+[31m-      "integrity": "sha512-85ttAOMLsr53VgXkTbkx8oA6YTfT4q7/HzXSLEYmjcSTJPMPQtvq1BD79Byep5xMUYbGRzEpDsjUf3dyp54IKw==",[m
+[31m-      "dev": true,[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/helpers": {[m
+[31m-      "version": "7.24.0",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/helpers/-/helpers-7.24.0.tgz",[m
+[31m-      "integrity": "sha512-ulDZdc0Aj5uLc5nETsa7EPx2L7rM0YJM8r7ck7U73AXi7qOV44IHHRAYZHY6iU1rr3C5N4NtTmMRUJP6kwCWeA==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/template": "^7.24.0",[m
+[31m-        "@babel/traverse": "^7.24.0",[m
+[31m-        "@babel/types": "^7.24.0"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/highlight": {[m
+[31m-      "version": "7.23.4",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/highlight/-/highlight-7.23.4.tgz",[m
+[31m-      "integrity": "sha512-acGdbYSfp2WheJoJm/EBBBLh/ID8KDc64ISZ9DYtBmC8/Q204PZJLHyzeB5qMzJ5trcOkybd78M4x2KWsUq++A==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/helper-validator-identifier": "^7.22.20",[m
+[31m-        "chalk": "^2.4.2",[m
+[31m-        "js-tokens": "^4.0.0"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/parser": {[m
+[31m-      "version": "7.24.0",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/parser/-/parser-7.24.0.tgz",[m
+[31m-      "integrity": "sha512-QuP/FxEAzMSjXygs8v4N9dvdXzEHN4W1oF3PxuWAtPo08UdM17u89RDMgjLn/mlc56iM0HlLmVkO/wgR+rDgHg==",[m
+[31m-      "dev": true,[m
+[31m-      "bin": {[m
+[31m-        "parser": "bin/babel-parser.js"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.0.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/plugin-transform-react-jsx-self": {[m
+[31m-      "version": "7.23.3",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.23.3.tgz",[m
+[31m-      "integrity": "sha512-qXRvbeKDSfwnlJnanVRp0SfuWE5DQhwQr5xtLBzp56Wabyo+4CMosF6Kfp+eOD/4FYpql64XVJ2W0pVLlJZxOQ==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/helper-plugin-utils": "^7.22.5"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      },[m
+[31m-      "peerDependencies": {[m
+[31m-        "@babel/core": "^7.0.0-0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/plugin-transform-react-jsx-source": {[m
+[31m-      "version": "7.23.3",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.23.3.tgz",[m
+[31m-      "integrity": "sha512-91RS0MDnAWDNvGC6Wio5XYkyWI39FMFO+JK9+4AlgaTH+yWwVTsw7/sn6LK0lH7c5F+TFkpv/3LfCJ1Ydwof/g==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/helper-plugin-utils": "^7.22.5"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      },[m
+[31m-      "peerDependencies": {[m
+[31m-        "@babel/core": "^7.0.0-0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/template": {[m
+[31m-      "version": "7.24.0",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/template/-/template-7.24.0.tgz",[m
+[31m-      "integrity": "sha512-Bkf2q8lMB0AFpX0NFEqSbx1OkTHf0f+0j82mkw+ZpzBnkk7e9Ql0891vlfgi+kHwOk8tQjiQHpqh4LaSa0fKEA==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/code-frame": "^7.23.5",[m
+[31m-        "@babel/parser": "^7.24.0",[m
+[31m-        "@babel/types": "^7.24.0"[m
+[31m-      },[m
+[31m-      "engines": {[m
+[31m-        "node": ">=6.9.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "node_modules/@babel/traverse": {[m
+[31m-      "version": "7.24.0",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/traverse/-/traverse-7.24.0.tgz",[m
+[31m-      "integrity": "sha512-HfuJlI8qq3dEDmNU5ChzzpZRWq+oxCZQyMzIMEqLho+AQnhMnKQUzH6ydo3RBl/YjPCuk68Y6s0Gx0AeyULiWw==",[m
+[31m-      "dev": true,[m
+[31m-      "dependencies": {[m
+[31m-        "@babel/code-frame": "^7.23.5",[m
+[31m-        "@babel/generator": "^7.23.6",[m
+[31m-        "@babel/helper-environment-visitor": "^7.22.20",[m
+[31m-        "@babel/helper-function-name": "^7.23.0",[m

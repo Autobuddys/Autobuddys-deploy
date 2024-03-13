@@ -1,0 +1,31 @@
+.footer_start{
+    text-align: center;
+    justify-content: center;
+    color:#ffffff;
+    font-weight: bold;
+    font-family:'Poppins';
+    background: #7e80fb;
+    background: -webkit-linear-gradient(272deg, #7e80fb 0%, #bc48ff 100%);
+    background: linear-gradient(272deg, #7e80fb 0%, #bc48ff 100%);
+    font-size: 1vw;
+    font-weight: 200;
+    width: auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width:1000px) {
+    .footer_start{
+        font-size: 1.5vw;
+        width: auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .footer_start{
+        font-size: 2.5vw;
+        width: auto;
+    }
+}
