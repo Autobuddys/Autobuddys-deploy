@@ -1,0 +1,122 @@
+.logo_center {
+  text-align: center;
+  padding: 2rem;
+  background: #95ffe6;
+  background: -webkit-radial-gradient(
+    circle,
+    #95ffe6 0%,
+    #d0f9ff 50%,
+    #ffffff 100%
+  );
+  background: radial-gradient(circle, #95ffe6 0%, #d0f9ff 50%, #ffffff 100%);
+  padding-top: 12vh;
+}
+
+.logo_center h5{
+  font-size:xx-large;
+  color: #5c5b5b;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  
+}
+.Webapp img{
+  border-radius: 50px;
+  width: 180px;
+  height: 55px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.logo_autism img {
+  height: 400px;
+  width: 200px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.autism {
+  height: 400px;
+  max-height: 100%;
+  max-width: 100%;
+  padding-top: 2%;
+}
+.elder {
+  width: 55rem;
+  max-height: 100%;
+  max-width: 100%;
+}
+.logo_elderly img{
+  width: 500px;
+  height: 500px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.logo_center button{
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-decoration: uppercase;
+  background: rgb(113, 106, 160);
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.autism_button{
+  display: flex;
+  flex-direction: row;
+  padding-top: 12%;
+}
+
+
+.buttons_connect{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.Apple img, .Mseva img,.playstore img{
+  width: 180px;
+  height: 55px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width:775px) {
+  .logo{
+    flex-direction: column;
+    height:160vh;
+  }
+  .buttons_connect{
+    flex-direction: column;
+  }
+  .autism_button{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    padding-left: 15%;
+  }
+}
+@media screen and (max-width:450px) {
+  .logo{
+    flex-direction: column;
+    height:160vh;
+  }
+  .buttons_connect{
+    flex-direction: column;
+  }
+  .autism_button{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    padding-left: 0%;
+  }
+}

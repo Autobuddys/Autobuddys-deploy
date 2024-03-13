@@ -1,0 +1,45 @@
+.navbar_logo img{
+    max-width: 100%;
+    height: 50px;
+    width: 200px;
+    
+}
+.toggle-icon {
+    color: black; /* Change to whatever color you desire */
+  }
+
+  .nav_start {
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    color: black;
+  }
+  
+  /* You can also apply the font to specific elements */
+  .navbar-brand,
+  .nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+  }
+
+  /* navbar.css */
+
+/* Add flexbox properties to navbar-nav to evenly distribute the items */
+.navbar-nav {
+    display: flex;
+    align-items: center; /* Optional: Align items vertically in the center */
+    width: 100%; /* Ensure the navbar-nav takes full width */
+  }
+  
+  /* Adjust the margin of the navbar-logo for spacing */
+  .navbar_logo {
+    margin-right: 10px; /* Adjust as needed */
+  }
+  
+  /* Adjust the margin of nav-items as needed */
+  .nav-item {
+    padding-left: 0rem; /* Adjust the margin between each nav-item */
+  }
+  
+  /* Adjust the margin of the last nav-item to prevent extra space */
+
+  
